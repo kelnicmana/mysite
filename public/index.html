@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
-<body class="text-gray-600 font-body">
+<body class="text-gray-600 font-body"> <!-- for back to top button-->
     
-    <div class="grid md:grid-cols-4 lg:grid-cols-4"><!-- content wrapper-->
+    <div class="grid md:grid-cols-4 lg:grid-cols-4 h-screen"><!-- content wrapper-->
         <div class="md:col-span-1 md:flex md: md:justify-end">
             <nav class="text-right">
                 <div>
@@ -40,71 +40,83 @@
                 </ul>
             </nav>
         </div><!-- end nav -->
-        <main class="px-16 py-6 bg-gray-100 md:col-span-3 lg:col-span-3">
-            <div class="bg-teal-400 text-gray-700 p-2 rounded-tl-2xl rounded-br-2xl flex justify-evenly md:justify-end">
-                <a href="https://www.facebook.com/kellie.manasco" target="_blank" class="btn border-teal-500 md:border-2 hover:bg-teal-500 hover:text-white transition ease-out duration-500">FB <i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/kelmana/" target="_blank" class="btn ml-2 border-teal-500 md:border-2 hover:bg-teal-500 hover:text-white transition ease-out duration-500">IG <i class="fab fa-instagram"></i></a>
-            </div>
+        <main class="px-16 py-6 bg-gray-100 md:col-span-3 lg:col-span-3 overflow-auto">
             
-            <header>
-                <h2 class="text-gray-700 text-5xl sm:text-6xl font-semibold">kelnicmana</h2>
-                <h3 class="text-2xl font-semibold">Welcome to my site</h3>
-            </header>
-
-            <div>
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Learning Goals</h4>
-                <div class="mt-8 grid lg:grid-cols-3 gap-10 grid-cols-1 mb-8">
-                    <!-- cards go here -->
-                    <div class="card hover:shadow-lg w-full sm:w-80 sm:justify-self-start lg:w-full">
-                        <img src="img/picrewmain.jpg" alt="" class="w-full h-48 object-cover">
-                        <div class="m-4">
-                            <span class="font-bold"><i class="fab fa-js-square"></i> JavaScript</span>
-                            <span class="block text-gray-500 text-sm">Learning vanilla JS</span>
-                        </div>
-                        <div class="badge w-12 text-center">
-                            <span>JS</span>
-                        </div>
-                    </div>
-                    <div class="card hover:shadow-lg w-full sm:w-80 sm:justify-self-center lg:w-full">
-                        <img src="img/acnhchar.jpg" alt="" class="w-full h-48 object-cover">
-                        <div class="m-4">
-                            <span class="font-bold"><i class="fab fa-css3-alt"></i> Tailwind</span>
-                            <span class="block text-gray-500 text-sm">This page is styled with Tailwind!</span>
-                        </div>
-                        <div class="badge w-12 text-center">
-                            <span>css</span>
-                        </div>
-                    </div>
-                    <div class="card hover:shadow-lg w-full sm:w-80 sm:justify-self-end lg:w-full">
-                        <img src="img/blkandwht.png" alt="" class="w-full h-48 object-cover">
-                        <div class="m-4">
-                            <span class="font-bold"><i class="fas fa-code"></i> The Odin Project</span>
-                            <span class="block text-gray-500 text-sm">Finish the curriculum</span>
-                        </div>
-                        <div class="badge w-12 text-center">
-                            <span>TOP</span>
-                        </div>
-                    </div>
+            <div><a id="top"></a>
+                <div class="bg-teal-400 text-gray-700 p-2 rounded-tl-2xl rounded-br-2xl flex justify-evenly md:justify-end">
+                    <a href="https://www.facebook.com/kellie.manasco" target="_blank" class="btn border-teal-500 md:border-2 hover:bg-teal-500 hover:text-white transition ease-out duration-500">FB <i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/kelmana/" target="_blank" class="btn ml-2 border-teal-500 md:border-2 hover:bg-teal-500 hover:text-white transition ease-out duration-500">IG <i class="fab fa-instagram"></i></a>
                 </div>
 
-                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Accomplished Goals</h4>
-                <div class="mx-8 my-4">
-                    <!-- cards go here -->
-                    <div>
-                        <ul class="list-disc">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Flexbox</li>
-                            <li>Grid</li>
-                            <li>Basic JavaScript</li>
-                        </ul>
+                <header>
+                    <h2 class="text-gray-700 text-5xl sm:text-6xl font-semibold">kelnicmana</h2>
+                    <h3 class="text-2xl font-semibold">Welcome to my site</h3>
+                </header>
+
+                <div>
+                    <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Learning Goals</h4>
+                    <div class="mt-8 grid lg:grid-cols-3 gap-10 grid-cols-1 mb-8">
+                        <!-- cards go here -->
+                        <div class="card hover:shadow-lg w-full sm:w-80 sm:justify-self-start lg:w-full">
+                            <a href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/">
+                                <img src="img/picrewmain.jpg" alt="" class="w-full h-48 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold"><i class="fab fa-js-square"></i> JavaScript</span>
+                                    <span class="block text-gray-500 text-sm">Learning vanilla JS</span>
+                                </div>
+                                <div class="badge w-12 text-center">
+                                    <span>JS</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card hover:shadow-lg w-full sm:w-80 sm:justify-self-center lg:w-full">
+                            <a href="https://tailwindcss.com/">
+                                <img src="img/acnhchar.jpg" alt="" class="w-full h-48 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold"><i class="fab fa-css3-alt"></i> Tailwind</span>
+                                    <span class="block text-gray-500 text-sm">This page is styled with Tailwind!</span>
+                                </div>
+                                <div class="badge w-12 text-center">
+                                    <span>css</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card hover:shadow-lg w-full sm:w-80 sm:justify-self-end lg:w-full">
+                            <a href="https://theodinproject.com/">
+                                <img src="img/blkandwht.png" alt="" class="w-full h-48 object-cover">
+                                <div class="m-4">
+                                    <span class="font-bold"><i class="fas fa-code"></i> The Odin Project</span>
+                                    <span class="block text-gray-500 text-sm">Finish the curriculum</span>
+                                </div>
+                                <div class="badge w-12 text-center">
+                                    <span>TOP</span>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                </div>
 
-                <div class="flex justify-center">
-                    <div class="btn bg-teal-300 text-teal-700 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out divide-purple-300">Goodbye</div>
-                </div>
+                    <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Accomplished Goals</h4>
+                    <div class="mx-8 my-4">
+                        <!-- cards go here -->
+                        <div>
+                            <ul class="list-disc">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Flexbox</li>
+                                <li>Grid</li>
+                                <li>Basic JavaScript</li>
+                            </ul>
+                        </div>
+                    </div>
 
+                    <div class="flex justify-center">
+                        <a href="#top">
+                            <div class="btn bg-teal-300 text-teal-700 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out divide-purple-300">to top</div>
+                        </a>
+                    </div>
+
+                </div>
             </div>
         </main>
     </div>
