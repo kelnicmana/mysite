@@ -2,11 +2,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="img/thumbnail.png" />
     <title>My Site</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
-<body class="text-gray-600 font-body"> <!-- for back to top button-->
+<body id="up" class="text-gray-600 font-body"> <!-- for back to top button-->
     
     <div class="grid md:grid-cols-4 lg:grid-cols-4 h-screen"><!-- content wrapper-->
         <div class="md:col-span-1 md:flex md: md:justify-end bg-teal-300">
@@ -42,7 +43,7 @@
         </div><!-- end nav -->
         <main class="px-16 py-6 bg-gray-100 md:col-span-3 lg:col-span-3 overflow-auto">
             
-            <div><a id="top"></a>
+            <div>
                 <div class="bg-teal-400 text-gray-700 p-2 rounded-tl-2xl rounded-br-2xl flex justify-evenly md:justify-end">
                     <a href="https://www.facebook.com/kellie.manasco" target="_blank" class="btn border-teal-500 md:border-2 hover:bg-teal-500 hover:text-white transition ease-out duration-500">FB <i class="fab fa-facebook-square"></i></a>
                     <a href="https://www.instagram.com/kelmana/" target="_blank" class="btn ml-2 border-teal-500 md:border-2 hover:bg-teal-500 hover:text-white transition ease-out duration-500">IG <i class="fab fa-instagram"></i></a>
@@ -111,7 +112,7 @@
                     </div>
 
                     <div class="flex justify-center">
-                        <a href="#top">
+                        <a href="#up">
                             <div class="btn bg-teal-300 text-teal-700 hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out divide-purple-300">to top</div>
                         </a>
                     </div>
